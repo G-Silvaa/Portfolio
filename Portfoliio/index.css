@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+    background-color: rgb(1, 1, 19);
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+header {
+    height: 5vh;
+    display: flex;
+    gap: 260px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+
+header h1{
+    display: flex;
+    margin-left: 6vh;
+    color: white;
+}
+
+header h1 .Port{
+    color: rgb(0, 217, 255);
+}
+
+header ul {
+    display: flex;
+    text-decoration: none;
+    margin-right: 15vh;
+    gap: 120px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    
+}
+
+header ul li a {
+    color: inherit;
+}
+
+header li :hover {
+    font-size: 18px;
+    transition: 1s;
+}
+
+ul li a.cor {
+    color: rgb(0, 217, 255);
+    font-size: 18px;
+    
+}
+
+
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 30vw;
+    
+    margin-top: 20vh;
+    margin-left: 15vh;
+    color: white;
+    gap: 20px;
+}
+
+.span-card{
+    font-size: 25px;
+}
+
+.name-card {
+    font-size: 55px;
+    
+}
+
+.desc-card {
+font-size: 30px;
+display: flex;
+gap: 10px;
+}
+
+.Frontend {
+    color: rgb(0, 217, 255);
+    border-right:2px solid;
+    padding-right: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.button-card{
+    height:40px;
+    width: 120px;
+    color: aqua;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: rgb(2, 126, 126);
+    cursor: pointer;
+}
+
+.type-animation {
+    animation: sim 500ms infinite normal, typing 4s 1s normal forwards , slide 6s steps(2) infinite;
+}
+
+
+@keyframes sim {
+    from {
+        border-right-color: rgb(0, 217, 255);;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width:0;
+    }
+    to {
+        width: 12.4em;
+    }
+}
+
+.container-two{
+    height: 100vh;
+    width:  100vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}

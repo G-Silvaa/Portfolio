@@ -7,10 +7,14 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins';
-    background-color: rgb(1, 1, 19);
+    overflow-x: hidden;
+    
     
 }
+body {
+    background-color: rgb(1, 1, 19);
 
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -22,9 +26,9 @@
 
 header {
     height: 5vh;
-    display: flex;
-    gap: 260px;
+    width: 100vw;
     background-color: transparent;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -35,6 +39,7 @@ header h1{
     display: flex;
     margin-left: 6vh;
     color: white;
+    
 }
 
 header h1 .Port{
@@ -44,13 +49,15 @@ header h1 .Port{
 header ul {
     display: flex;
     text-decoration: none;
-    margin-right: 15vh;
-    gap: 120px;
+    gap: 90px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     color: white;
-    
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+
 }
 
 header ul li a {
@@ -58,8 +65,10 @@ header ul li a {
 }
 
 header li :hover {
-    font-size: 18px;
+    font-size: 17px;
     transition: 1s;
+    color: rgb(0, 217, 255);
+    border-bottom: 1px solid rgb(0, 217, 255);
 }
 
 ul li a.cor {
@@ -75,7 +84,8 @@ ul li a.cor {
     flex-direction: column;
     justify-content: center;
     height: 60vh;
-    width: 30vw;
+    width: 100vw;
+    
     
     margin-top: 20vh;
     margin-left: 15vh;
@@ -108,6 +118,7 @@ gap: 10px;
 }
 
 .button-card{
+    background-color: transparent;
     height:40px;
     width: 120px;
     color: aqua;
@@ -141,10 +152,194 @@ gap: 10px;
     }
 }
 
+::-webkit-scrollbar{
+    width: 1px;
+    
+    
+}
+::-webkit-scrollbar-thumb{
+    
+}
+
 .container-two{
-    height: 100vh;
+    height: 70vh;
     width:  100vw;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    align-items: center;
+   
+    
 }
+
+.Titulo{
+    color: rgb(0, 217, 255);
+    margin-top: 4vh;
+    border-bottom: 1px solid  rgb(0, 217, 255);
+    
+}
+
+.card-container{
+    width: 90vw;
+    height: 40vh;
+    margin-top: 10vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+
+}
+
+.Avatar{
+    
+    position: absolute;
+    display: flex;
+    width: 206px;
+    height: 206px;
+    border: 1px solid  rgb(0, 217, 255);
+    border-radius: 50%;
+    
+    
+}
+.eu{
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    color: rgb(116, 116, 116);
+}
+
+.container-three{
+    height: 90vh;
+    width:  100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+   
+   
+}
+
+.titulo-three{
+    color: rgb(0, 217, 255);
+    margin-top: 4vh;
+    border-bottom: 1px solid  rgb(0, 217, 255);
+    
+}
+
+.cards{
+    display: flex;
+    margin-top: 20vh;
+    gap: 60px;
+}
+
+
+.card-one{
+    width: 18vw;
+    height: 44vh;
+    background-color: rgba(20, 20, 20, 0.514);
+    display: flex;
+    position: relative;
+   
+
+}
+
+.card-one span:first-of-type{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background:linear-gradient(to right, transparent, rgb(0, 217, 255));
+    animation: animar1 2s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes animar1{
+    0%{
+transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.card-one span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background:linear-gradient(to bottom, transparent, rgb(0, 217, 255));
+    animation: animar2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar2{
+    0%{
+transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.card-one span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background:linear-gradient(to left, transparent, rgb(0, 217, 255));
+    animation: animar3 2s linear infinite;
+}
+
+@keyframes animar3{
+    0%{
+transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+ }
+
+
+.card-one span:last-of-type{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background:linear-gradient(to top, transparent, rgb(0, 217, 255));
+    animation: animar4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar4{
+    0%{
+transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.card-two{
+    width: 18vw;
+    height: 44vh;
+    background-color: rgb(46, 43, 46);
+    
+    
+   
+}
+
+
+.card-three{
+    width: 18vw;
+    height: 44vh;
+    background-color: rgb(48, 44, 48);
+ 
+    display: flex;
+  
+    
+}
+

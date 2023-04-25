@@ -1,7 +1,4 @@
 const menuItem = document.querySelectorAll('ul li a')
-const progresso = document.querySelectorAll('.bar')
-const numero = document.querySelectorAll('.percent, .num')
-console.log(numero)
 
 
 function selectL(){

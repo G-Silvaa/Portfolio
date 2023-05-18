@@ -44,14 +44,22 @@ const BMobile = document.querySelector('.mobile')
 const FMobile = document.getElementById('menu2')
 
 
-function selectLin(){
-    FMobile.forEach((item)=> 
-        item.classList.remove('ativo')
-    )
-    this.classList.add('ativo')
+function openMenu(event){
+  FMobile.classList.toggle('ativar')
+  BMobile.classList.toggle('ativar')
+  
+  
 }
  
-BMobile.addEventListener('click',selectL);
+BMobile.addEventListener('click',openMenu);
+
+function close() {
+    FMobile.classList.remove('ativar')
+}
+
+FMobile.addEventListener('click',close);
+
+
  
  
 

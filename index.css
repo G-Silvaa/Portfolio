@@ -37,24 +37,26 @@ header {
 }
 
 header h1 {
-  display: flex;
+  display:flex;
   margin-left: 6vh;
   color: white;
+  position: absolute;
 }
 
 header h1 .Port {
   color: rgb(0, 217, 255);
+ 
 }
 
 header ul {
   display: flex;
   text-decoration: none;
-  gap: 90px;
+  gap: 60px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   color: white;
-  width: 80vw;
+  width: 130vw;
   justify-content: center;
   align-items: center;
 }
@@ -64,7 +66,7 @@ header ul li a {
 }
 
 header li :hover {
-  font-size: 17px;
+ 
   transition: 1s;
   color: rgb(0, 217, 255);
   border-bottom: 1px solid rgb(0, 217, 255);
@@ -72,7 +74,7 @@ header li :hover {
 
 ul li a.cor {
   color: rgb(0, 217, 255);
-  font-size: 18px;
+ 
 }
 
 .container-card {
@@ -174,25 +176,26 @@ ul li a.cor {
   width: 90vw;
   height: 40vh;
   margin-top: 10vh;
-
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .Avatar {
-  position: absolute;
+  
   display: flex;
-  width: 206px;
+  width: 1800px;
   height: 206px;
   border: 1px solid rgb(0, 217, 255);
   border-radius: 50%;
   z-index: -1;
+  
 }
 
 .eu {
   flex-wrap: wrap;
-  margin-left: 15vw;
+  margin-left: 4vw;
   color: rgb(116, 116, 116);
 }
 
@@ -542,14 +545,14 @@ figure img {
   align-items: center;
 }
 
-.container-skills {
-  width: 100%;
-  height: 100vh;
+/* .container-skills {
+  
+  height: 50vh;
   background: #222;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .skills {
   display: flex;

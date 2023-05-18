@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./mobile.css">
 </head>
 
 <body>
-    <div class="container" id="portt">
+   
         <header>
             <h1>
                 <div class="Port">Genilton</div>Silva
             </h1>
-
-            <ul>
+            <button aria-expanded="false" aria-controls="menu" class="mobile">Menu</button>
+            <nav>
+            <ul id="menu">
                 <li><a href="#portt" class="cor">Home</a></li>
                 <li><a href="#container-two"> Sobre mim</a></li>
                 <li><a href="#container-three">Experiências</a></li>
@@ -25,8 +27,23 @@
                 <li><a href="#containersix">Cursos</a></li>
                 <li><a href="#container-seven">Contatos</a></li>
             </ul>
+            
+        </nav>
 
         </header>
+        <nav>
+            <ul id="menu2">
+                <li><a href="#portt" class="cor">Home</a></li>
+                <li><a href="#container-two"> Sobre mim</a></li>
+                <li><a href="#container-three">Experiências</a></li>
+                <li><a href="#container-four">Skills</a></li>
+                <li><a href="#container-five">Portfólio</a></li>
+                <li><a href="#containersix">Cursos</a></li>
+                <li><a href="#container-seven">Contatos</a></li>
+            </ul>
+            
+        </nav>
+    <div class="container" id="portt">
 
         <div class="container-card" >
             <span class="span-card">Olá, meu nome é</span>
@@ -148,11 +165,6 @@
 
     <div class="container-five" id="container-five">
         <h1 class="titulo-three"> Portfólio</h1>
-        <div class="container-five-p">
-            <div class="tela1">
-           <a href="https://g-silvaa.github.io/DesafioTree/" target="_blank"> <img class="primeira-tela" src="./imgs/tela1.png" alt=""></a>    
-    </div>
-</div>
 </div>
 
     <div class="containersix" id="containersix">
@@ -229,7 +241,7 @@
         <li><a href="#"> Reports Bugs </a></li>
         
     </ul>
-</div>
+
 
     <div class="sobrefour">
         <ul>
@@ -245,7 +257,7 @@
     </ul>
     </div>
     
-   
+</div>   
 
 
     <script src="./index.js"></script>
